@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>ecommerce</title>
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="./image/mine1.jpeg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <div>
+            <h2>#let's_talk</h2>
+            <p>LEAVE A MESSAGE, We love to hear from you!</p>
+        </div>
+        <div>
+            <!-- <img src="image/wepik-export-20231227134320gehG.png" alt=""> -->
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astranaut T-Shirts</td>
+                    <td>$100.19</td>
+                    <td><input type="number" value="1" onchange="updateSub(this)"></td>
+                    <td>$100.19</td>
+                    <td><a href="#" onclick="removeProduct(this)"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="image/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astranaut T-Shirts</td>
+                    <td>$100.19</td>
+                    <td><input type="number" value="1" onchange="updateSub(this)"></td>
+                    <td>$100.19</td>
+                    <td><a href="#" onclick="removeProduct(this)" ><i class="far fa-times-circle"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="image/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astranaut T-Shirts</td>
+                    <td>$100.19</td>
+                    <td><input type="number" value="1" onchange="updateSub(this)"></td>
+                    <td>$100.19</td>
+                    <td><a href="#" onclick="removeProduct(this)"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart SubTotal</td>
+                    <td>$300.57</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$300.57</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed To Checkout</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="image/minewhite.jpeg" alt="" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Aswathnagar,2nd main_3rd cross, Bangalore</p>
+            <p><strong>Phone:</strong>(+91) 98 7654 3210</p>
+            <p><strong>Hours:</strong>10.00-22.00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4 class="head">About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4 class="head">My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4 class="head">Install</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="image/pay/app.jpg" alt="">
+                <img src="image/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="image/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023.AKB_proj - Ecomm_Web</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all quantity input fields
+            var quantityInputs = document.querySelectorAll("#cart tbody tr input[type='number']");
+
+            // Attach onchange event to each quantity input
+            quantityInputs.forEach(function (input) {
+                input.addEventListener("change", function () {
+                    updateSub(input);
+                });
+            });
+
+            // Get all remove buttons
+            var removeButtons = document.querySelectorAll("#cart tbody tr a");
+
+            // Attach onclick event to each remove button
+            removeButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    removeProduct(button);
+                });
+            });
+        });
+
+        // Function to update subtotal when quantity changes
+        function updateSub(input) {
+            var quantityInput = input;
+            var row = quantityInput.closest("tr");
+            var priceCell = row.querySelector("td:nth-child(3)");
+            var subtotalCell = row.querySelector("td:nth-child(5)");
+
+            var price = parseFloat(priceCell.textContent.replace("$", ""));
+            var quantity = parseInt(quantityInput.value);
+            var subtotal = price * quantity;
+
+            subtotalCell.textContent = "$" + subtotal.toFixed(2);
+
+            updateCartTotal();
+        }
+
+        // Function to remove a product from the cart
+        function removeProduct(button) {
+            var removeButton = button;
+            var row = removeButton.closest("tr");
+            row.remove();
+
+            updateCartTotal();
+        }
+
+        // Function to update the cart total
+        function updateCartTotal() {
+            var subtotalCells = document.querySelectorAll("#cart tbody td:nth-child(5)");
+            var cartTotalCell = document.querySelector("#subtotal table tr:last-child td:last-child");
+            var cartSubTotalCell = document.querySelector("#subtotal table tr:first-child td:last-child");
+
+            var total = 0;
+
+            subtotalCells.forEach(function (subtotalCell) {
+                total += parseFloat(subtotalCell.textContent.replace("$", ""));
+            });
+
+            cartTotalCell.textContent = "$" + total.toFixed(2);
+            cartSubTotalCell.textContent = "$" + total.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
